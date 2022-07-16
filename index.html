@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body style="margin: 0%;padding:0%; ">
+    <div class="bg">
+ <h1 style="text-align: center; font-size: 400%; font-family: 'Source Sans Pro', sans-serif; ">Tic Tac Toe</h1>
+    <div id="container">
+    <div onclick="turn(1)" id="cell1" class="cell" style="border-top: none ; border-left:none; ">
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(2)" id="cell2" class="cell" style="border-top: none ; ">
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(3)" id="cell3" class="cell" style="border-top: none ; border-right:none; ">
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(4)" id="cell4" class="cell" style="border-left:none;">
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(5)" id="cell5" class="cell">
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(6)" id="cell6" class="cell" style="border-right:none;">
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(7)" id="cell7" class="cell" style="border-bottom: none ; border-left:none; ">
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(8)" id="cell8" class="cell" style="border-bottom: none ;" >
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+    <div onclick="turn(9)" id="cell9" class="cell" style="border-bottom: none ;border-right: none ;" >
+        <img class="os" src="o.png" alt="">
+        <img class="xs" src="x.png" alt=""></div>
+
+    </div>
+    <div id="draw" style="margin: auto; width: 200px; height: 100px; border: none; display: none;">
+        <div class="cell" style=" border:none; "><img style="display:block;" class="os" src="o.png" alt=""></div>
+        <div class="cell" style=" border:none; "><img style="display:block;" class="xs" src="x.png" alt=""></div>
+    </div>
+
+    <br>
+    
+    <h1 style="text-align: center; font-size: 250%; font-family: 'Source Sans Pro', sans-serif;" id="player">Turn for Player X</h1>
+
+    <img style="display: none;
+	margin-left: auto;
+	margin-right: auto; width: 70px;" id="restart" src="restart.png" onClick="window.location.reload();" alt="error:(">
+
+
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
